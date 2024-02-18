@@ -6,30 +6,55 @@ In this project, I chose to put together a few smaller projects together into on
 
 This project showcases various commands in Powershell and Linux. It also familarizes us with Windows Server 2019 and skills required by system administrators. 
 Skills Demonstrated are as follows:
+  
   -Virtualization
+  
     -Installed:
+    
       •  Windows Server 2019
+      
       •  Windows 10 Pro
+      
       •  Kali Linux
+      
       •  Type 2 Hypervisor (VirtualBox)
+  
   -DHCP Server creation and hosting
+  
   -DNS Server creation and hosting
+  
   -Active Directory creation and management
+  
   -DC creation and management
+  
   -Organizational Unit creation and management
+  
   -User accounts creation and management
+  
   -Security Groups creation and management
+  
   -Group Policy creation and management
+  
   -Joining clients to Domain
+  
   -Powershell/Command Prompt/Linux CLI
+  
   -Troubleshooting
+  
   -Network Administration
+  
     -Static IP assignment
+    
     -NAT
+    
     -DHCP IP assignment
+    
     -Troubleshooting
+    
     -Host Discovery
+    
     -Port Scanning
+    
     -Network Sniffing
 
 Part A:
