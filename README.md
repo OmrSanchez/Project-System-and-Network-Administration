@@ -4,6 +4,8 @@
 
 In this project, I chose to put together a few smaller projects together into one due to the simplicity behind each of these components. Each subcategory of the scope of the project are listed below. I will be describing the finely grained components to each throughout the sections. I will also compile various files and add them depending on how critical they are to this process.
 
+I have recorded videos for the project that demonstrate system and network administrator techniques. They are linked to this project page by part. The links take you to youtube where the videos have been uploaded.
+
 This project showcases various commands in Powershell and Linux. It also familarizes us with Windows Server 2019 and skills required by system administrators. 
 Skills Demonstrated are as follows:
   
@@ -85,10 +87,49 @@ DC (Server 2019)
 https://youtu.be/O_UtfeGBw7o?si=OU9X4BufpdzcgLQW
 
 
+Part B:
 
 2. Check Network Performance and Network Sniffing
 
+![Drawing2](https://github.com/OmrSanchez/Network-Project/assets/54558041/39975629-5d83-4995-84ba-6584902d3689)
 
-3. Perform Host Discovery
+The steps taken are as follows:
+**Network Performance and Sniffing**
+
+**DC (Server 2019)**
+1.	Verify IP address
+2.	Mkdir C:\BigFiles (Creates folder named “BigFiles”)
+3.	Net share BigFiles=C:\BigFiles /GRANT:Everyone,FULL (Defines who folder is shared with)
+4.	Icacls “C:\BigFiles” /grant Everyone:F (Permissions, not adequate for security, current permissions assigned are due to Test Environment)
+5.	Map Network Drive to Client PC
+6.	Disconnect Network Drive
+7.	Open Performance Monitor
+8.	Create “NEW” data collector set with relevant markers
+    a.	Name: Network Performance
+    b.	Create manually (advanced)
+    c.	Next  Create data logs > Performance counter  Next
+    d.	Net Adapter: “Bytes Total/sec”, “Current Bandwidth”
+    e.	TCPIP Performance Diagnostics: “TCP checksum errors”, “TCP timeouts”
+    f.	TCPv4: Connections Active
+    g.	Ok
+    h.	Finish
+9.	Save Template (Explain that this template can be used on other servers that perform similar functions)
+
+**Client 1 (Windows 10)**
+1.	Verify IP address
+2.	Same subnet?
+3.	Ping to DC to verify connectivity
+4.	Mkdir C:\projects (Creates folder named project)
+5.	CD C:\projects (changes powershell file directory to folder “projects”)
+6.	Fsutil file createnew test1 1000000000000000 (creates a new file named test1)
+
+**Transfer**
+1.	[DC]: Open wireshark  select Internal Network Port  filter to IP  Start Capture
+2.	[DC]: Open Performance Monitor  Select “Network Performance Template”  Right-click  Start
+3.	[Client] Robocopy C:\projects \\DC-VB1\BigFiles (performs file transfer over the network between both devices, source = C:\projects, destination = \\DC10\BigFiles)
+
+
+
+4. Perform Host Discovery
 
 https://youtu.be/O_UtfeGBw7o?si=OU9X4BufpdzcgLQW
