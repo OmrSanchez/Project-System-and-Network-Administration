@@ -7,6 +7,7 @@ In this project, I chose to put together a few smaller projects together into on
 I have recorded videos for the project that demonstrate system and network administrator techniques. They are linked to this project page by part. The links take you to youtube where the videos have been uploaded.
 
 This project showcases various commands in Powershell and Linux. It also familarizes us with Windows Server 2019 and skills required by system administrators. 
+
 Skills Demonstrated are as follows:
   
   -Virtualization
