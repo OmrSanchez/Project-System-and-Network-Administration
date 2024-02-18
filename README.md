@@ -94,6 +94,7 @@ Part B:
 ![Drawing2](https://github.com/OmrSanchez/Network-Project/assets/54558041/39975629-5d83-4995-84ba-6584902d3689)
 
 The steps taken are as follows:
+
 **Network Performance and Sniffing**
 
 **DC (Server 2019)**
@@ -128,8 +129,38 @@ The steps taken are as follows:
 2.	[DC]: Open Performance Monitor  Select “Network Performance Template”  Right-click  Start
 3.	[Client] Robocopy C:\projects \\DC-VB1\BigFiles (performs file transfer over the network between both devices, source = C:\projects, destination = \\DC10\BigFiles)
 
+https://youtu.be/PmLN_881AZw?si=KJlqJVmmYMeExwWC
+
+Part C:
+
+3. Perform Host Discovery
+
+![Drawing3](https://github.com/OmrSanchez/Network-Project/assets/54558041/31c81a2d-0862-4d3a-9880-cb7f591f86d7)
+
+The steps taken are as follows:
+
+**Host Discovery and Port Scanning** 
+
+**Kali Linux**
+1.	Ifconfig
+2.	ip a
+3.	ip route show (routes)
+4.	arp -e (Ip to mac address table)
+5.	arp -a (Ip to mac address table)
+6.	ip neighbor (Similar to arp)
+7.	Netdiscover -i eth0 -r “172.16.0.0/24” (Searches for hosts)
+   
+**DC**
+1.	pathping 172.16.0.101  (Tests reliability of connection)
+   
+**Kali Linux**
+1.	mmap localhost (Based on destination of search, identifies open ports)
+2.	mmap “172.16.0.0/24” (Identify hosts, ports open on host, lists other hosts)
+3.	sudo nmap -sS 172.16.0.1 (Targeted scan that scans the 1000 default port range)
+4.	sudo nmap -A 172.16.0.1 (Targeted scan enabled OS detection, version detection, script scanning, and traceroute)
+
+https://youtu.be/ccLNmBk0h44?si=Yu4WAzeCicawq5Hp
 
 
-4. Perform Host Discovery
 
-https://youtu.be/O_UtfeGBw7o?si=OU9X4BufpdzcgLQW
+
