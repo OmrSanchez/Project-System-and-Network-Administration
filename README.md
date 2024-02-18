@@ -82,11 +82,13 @@ DC (Server 2019)
 10.	gpupdate (Sets the current policy to the DC)
 11.	(After:) gpresult /H C:\passwords-gpresults-new.html
 
+https://youtu.be/O_UtfeGBw7o?si=OU9X4BufpdzcgLQW
 
 
-3. Check Network Performance and Network Sniffing
+
+2. Check Network Performance and Network Sniffing
 
 
-4. Perform Host Discovery
+3. Perform Host Discovery
 
 https://youtu.be/O_UtfeGBw7o?si=OU9X4BufpdzcgLQW
