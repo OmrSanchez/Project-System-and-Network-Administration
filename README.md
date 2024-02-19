@@ -4,6 +4,11 @@
 
 In this project, I chose to put together a few smaller projects together into one due to the simplicity behind each of these components. Each subcategory of the scope of the project are listed below. I will be describing the finely grained components to each throughout the sections. I will also compile various files and add them depending on how critical they are to this process.
 
+The project sections are as follows:
+1. Manage Access Controls in Windows Server
+2. Check Network Performance and Network Sniffing
+3. Host Discovery and Port Scanning
+
 I have recorded videos for the project that demonstrate system and network administrator techniques. They are linked to this project page by part. The links take you to youtube where the videos have been uploaded.
 
 This project showcases various commands in Powershell and Linux. It also familarizes us with Windows Server 2019 and skills required by system administrators. 
@@ -134,7 +139,7 @@ https://youtu.be/PmLN_881AZw?si=KJlqJVmmYMeExwWC
 
 Part C:
 
-3. Perform Host Discovery
+3. Host Discovery and Port Scanning
 
 ![Drawing3](https://github.com/OmrSanchez/Network-Project/assets/54558041/31c81a2d-0862-4d3a-9880-cb7f591f86d7)
 
